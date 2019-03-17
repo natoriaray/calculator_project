@@ -4,12 +4,15 @@
 }
 
 html, body {
-  background-color: pink;
+  background-color: #3e7d84;
   margin: 50px;
+
 }
 
 .container {
   display: grid;
+  margin: 0 auto;
+  width: 600px;
   grid-gap: 3px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 50px 50px 50px 50px 50px;
@@ -23,4 +26,24 @@ html, body {
 .equal {
   grid-row: 2 / 6;
   grid-column: 5 / 6;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  font-size: 40px;
+  color: #feffff;
+  background-color: #4d4b47;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  background-color: #dfdfdf;
+  color: #3e7d84;
+  font-size: 30px;
+  border-radius: 4px;
+  border: none;
 }
