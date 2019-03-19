@@ -6,30 +6,30 @@
     <title>Simple Calculator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id='calculator'>
       <div class="screen"><input type="text" id="screen" value='' disabled></div>
 
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="7">7</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="8">8</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="9">9</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="7">7</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="8">8</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="9">9</button></div>
       <div><button type="button" class="number" >&divide</button></div>
       <div class="equal"><button type="button">=</button></div>
 
 
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="4">4</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="5">5</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)"value="6">6</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="4">4</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="5">5</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)"value="6">6</button></div>
       <div><button type="button" class="multiply">&times</button></div>
 
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="1">1</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="2">2</button></div>
-      <div><button type="button" class="number" onclick="updateScreen(this)" value="3">3</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="1">1</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="2">2</button></div>
+      <div><button type="button" class="number" onclick="displayScreen(this)" value="3">3</button></div>
       <div><button type="button" class="divide">-</button></div>
 
-      <div><button type="button" class="number"onclick="updateScreen(this)" value="0">0</button></div>
+      <div><button type="button" class="number"onclick="displayScreen(this)" value="0">0</button></div>
       <div><button type="button" class="decimal">.</button></div>
       <div><button type="button" class="clear">CE</button></div>
-      <div><button type="button" class="add" onclick="addOperator(this.value)" value="+">+</button></div>
+      <div><button type="button" class="add" onclick="displayScreen()" value="+">+</button></div>
 
     </div>
   </body>
