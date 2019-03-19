@@ -1,20 +1,18 @@
-/*function numbers(el) {
-  document.getElementById('screen').value = return el;
+var previousNumber;
+var screen = document.getElementById('screen');
+
+screen.value = '0';
+
+
+function displayScreen(el) {
+ //Display 'this' number on screen
+ screen.value === '0' ? screen.value = el.value : screen.value = screen.value + el.value;
+
+ //make screen value a number and store it to previousNumber
+ previousNumber = Number(screen.value);
 }
-*/
 
-var total;
-var firstNum;
-var displayScreen = document.getElementById('screen');
-var currentNumber;
-
-displayScreen.value = '0';
-
-function updateScreen(el) {
-      if (displayScreen.value === '0') {
-        displayScreen.value = el.value;
-    } else {
-      displayScreen.value = displayScreen.value + el.value;
-    }
-    currentNumber = Number(displayScreen.value)
-}
+document.querySelector('.add').addEventListener('click', function() {
+  //display plus sign in screen
+  screen.value = screen.value + this.value;
+})
